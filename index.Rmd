@@ -4,7 +4,7 @@ output: html_document
 ---
 ## Portfolio Submission Details
 
-**Live Website URL:** https://sabrinagusola.github.io  
+**Live Website URL:** https://sabrina-gusola.github.io  
 **Project Type:** Individual Portfolio  
 
 ---
