@@ -1,0 +1,86 @@
+---
+title: "Sabrina Gusola - 668568900"
+output: html_document
+---
+
+# About Me
+
+I am a Business Administration student with experience in financial office administration, retail, and custodial work. I enjoy contributing to organized, professional environments and adding creativity through decor and customer engagement.
+
+---
+
+## Education
+
+- **Business Administration**, Vancouver Island University  
+  - September 2025 – Present  
+
+- **Business Management Program**, Kwantlen Polytechnic University  
+  - September 2022 – December 2023  
+
+- **High School Diploma**, Langley Christian School  
+  - Graduated: 2022  
+
+---
+
+## Professional Experience
+
+### Financial Office Administration Assistant  
+**Sun Life Financial / Clauzel Bittle Financial Solutions – Langley, BC**  
+*March 2024 – May 2025*
+
+- Processed applications, policy amendments, renewals, and investment documentation  
+- Executed investment trades using internal programs in line with strict regulations  
+- Responded to client questions about policies, coverage, and investment accounts  
+- Managed scheduling, document organization, and day-to-day office support  
+- Assisted with social media and website updates to support marketing activities  
+
+### Receptionist / Office Assistant (Summer / Vacation Relief)  
+**Sunco Drywall Ltd. – Surrey, BC**  
+*June 2019 – August 2019*
+
+- Welcomed visitors and answered phones  
+- Assisted with scheduling, filing, and maintaining office records  
+- Supported team members with daily administrative tasks  
+
+### Cashier / Floor Associate  
+**Michaels – Langley, BC**  
+*April 2021 – March 2022*
+
+- Provided friendly customer service at the register and on the sales floor  
+- Processed purchases, returns, and exchanges accurately  
+- Helped customers find products and shared product knowledge  
+- Assisted with stocking and merchandising displays  
+
+### Custodian  
+**Sunco Drywall Ltd. – Surrey, BC**  
+*September 2020 – July 2021*
+
+- Completed regular cleaning rounds (vacuuming, mopping, waste removal)  
+- Sanitized frequently touched areas and restocked supplies  
+- Helped maintain a safe environment during the Covid 19 pandemic 
+
+---
+
+## Technical Skills and Tools
+
+- R and RStudio (basic scripting and R Markdown)  
+- Microsoft Office / Google Workspace (Excel, Word, Outlook, Google Drive)  
+- Basic social media content planning (Instagram and Facebook)
+- Basic graphic design (Canva)
+
+---
+
+## Other Skills
+
+- Communication and customer service  
+- Time management and organization  
+- Attention to detail and reliability  
+- Creative thinking for decor and branding ideas  
+
+---
+
+## Contact
+
+- **Email:** [sabrinagusola@gmail.com](mailto:sabrinagusola@gmail.com)  
+- **GitHub:** <https://github.com/sabrinagusola>  
+- **Location:** Langley / Surrey, BC  

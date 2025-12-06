@@ -1,0 +1,22 @@
+---
+title: "Website Deployment Reflection"
+author: "Sabrina Gusola, 668568900"
+date: "2025-12-05"
+output:
+  html_document:
+  theme: cosmo
+---
+  
+  ## Website Information
+  
+**Live Website URL:** https://sabrinagusola.github.io/
+**GitHub Repository URL:** https://github.com/sabrinagusola/sabrinagusola.github.io
+**Project Type:** Individual Portfolio
+
+## Reflection
+
+Building this website was a bit of a learning curve and challenge, but I was able to use my problem solving skills to get a finished product that I am proud of. I was able to use what I learned in previous units, specifically the use of ggplot2, R markdown, overall R scripts. Although uploading to GitHub took some navigating, I was happy to have been able to quickly adapt and get everything uploaded and working properly. I also thought the cosmo design made the overall website look professional, and closer to something that I would want to show to clients or potential customers. Ultimately, I have found this course to change the way I look at data and programming, I now know it is not a far stretch to program a basic website or analyze data using a basic script, and I hope to utilize this with my small business in the near future.
+
+## Website Overview
+
+I build this website as a resume that emphesizes the skills Ive developed through this course, while connecting them to other skills Ive developed in both my career, small business, and other related hobbies and passions. My previous eduction and jobs are listed here, and Ive outlined some additional skills to do specifically with R Studio and MGMT 230.

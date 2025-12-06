@@ -1,0 +1,110 @@
+---
+title: "Business Insight Report"
+subtitle: "Data Visualization and Communication"
+author: "Sabrina Gusola - 668568900"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+#### Load Library and Dataset
+```{r}
+library(ggplot2)
+```
+
+#### Load the business dataset
+```{r}
+business_data <- read.csv("data/business_performance.csv")
+```
+
+## Data Setup and Business Context - Question 1: Data Preparation and Initial Analysis
+### Structure and summary of the dataset
+```{r}
+str(business_data)
+summary(business_data)
+```
+
+#### The dataset contains quartely sales variables (Q1, Q2, Q3 & Q4) and channel variables (online, mobile & retail). This data shows an approximate revenue value between ($290000 - $370000)
+
+
+### Total revenue by channel & Average number of customers per quarter
+```{r}
+revenue_by_channel <- aggregate(revenue ~ channel, data = business_data, sum)
+revenue_by_channel
+avg_customers_by_quarter <- aggregate(customers ~ quarter, data = business_data, mean)
+avg_customers_by_quarter
+```
+
+#### This dataset shows that Online channels bring the highest revenue at 5571130, while in second mobile has 4158056 and lastly, retail brings the lowest at 2693023. The highest quarter for customers is Q3 at a mean of 1172.917. 
+
+
+### Columns revenue per customer
+```{r}
+business_data$revenue_per_customer <- business_data$revenue / business_data$customers
+avg_rpc_by_channel <- aggregate(revenue_per_customer ~ channel, data = business_data, mean)
+avg_rpc_by_channel
+```
+
+#### This dataset shows the retail channel has the highest averge revenue per customer at 314.2239. The business insights represented could suggest new strategies being added into channeling towards mobile and online to have the revenue increased in those sectors. Business Inights could include target marketing, social media presence or product sales strategies.
+
+## Business Visualizations - Question 2: Creating Professional Charts
+### Calculate totals first
+```{r}
+channel_totals <- aggregate(revenue ~ channel, data = business_data, sum)
+```
+
+### Bar chart showing total revenue by channel
+```{r}
+ggplot(channel_totals, aes(x = channel, y = revenue)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Total Revenue by Channel", 
+       x = "Sales Channel", y = "Revenue ($)")
+```
+       
+#### The bar chart visualizes the online channel as the hightest revenue, the lowest revenue represented on the graph is retail which should recieve more investment based on the information given. To increase the revenue the retail channel could recieve more financial or target market assistance. 
+
+
+### Scatter plot comparing customers and revenue by channel
+```{r}
+ggplot(business_data, aes(x = customers, y = revenue, color = channel)) +
+  geom_point(size = 3, alpha = 0.8) +
+  labs(title = "Customer Count vs Revenue by Channel",
+       x = "Number of Customers", 
+       y = "Revenue ($)",
+       color = "Channel") +
+  theme_minimal()
+```
+  
+#### The scatterplot visualizes the customer count vs revenue by channel and demostrates retail channel as most effect in creating the most efficience at converting customers to revenue. 
+  
+  
+## Strategic Recommendations - Question 3: Action Plan
+### Professional summary table using aggregated data.
+
+
+### Summary table using aggregated data
+```{r}
+summary_table <- merge(revenue_by_channel, avg_rpc_by_channel, by = "channel")
+summary_table <- merge(summary_table,
+                       aggregate(customers ~ channel, data = business_data, mean),
+                       by = "channel")
+```
+
+### Columns for clarity
+```{r}
+colnames(summary_table) <- c("Channel", 
+                             "Total Revenue ($)", 
+                             "Avg Revenue per customer ($)", 
+                             "Avg Customers")
+```
+
+### Show the table
+```{r echo=FALSE}
+summary_table
+```
+
+### Strategic recommendation memo
+#### In summary, the online channel brings the largest revenue ($5571130), retail has the highest revenue per customer ($314.23). A strategic recommendation is to invest higher into the online channel to increase even more revenue. Additionally, the marketing team should review the retail channel and target market the brand in-person to bring the revenue to a closer count to online and mobile levels. This would create an evened sales performance and each channel would be contributing to further growth. 
